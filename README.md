@@ -5,7 +5,7 @@
 
 - 👨‍💻 All of my projects are available at [https://github.com/19bcs22Ravi](https://github.com/19bcs22Ravi)
 
-- 💬 Ask me about **Terraform,AWS,Bash**
+- 💬 Ask me about **Terraform,AWS,Bash,JenkinsCi,SonarQube,Ansible,Python,Shell,Linux**
 
 - 📫 How to reach me **jha.raviraj1999@gmail.com**
 
