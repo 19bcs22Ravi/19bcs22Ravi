@@ -1,0 +1,76 @@
+name: Code Coverage GSheet
+on:
+  schedule:
+    - cron: "30 3 * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run tests
+        run: |
+          yarn add --dev jest-junit
+          npx jest --coverage --reporters=default --reporters=jest-junit | tee ./coverage.txt
+
+      - name: Jest Coverage Comment
+        uses: MishaKav/jest-coverage-comment@main
+        with:
+          title: Jest Coverage Comment
+          summary-title: Jest Coverage Summary
+          badge-title: Coverage
+          hide-comment: false
+          create-new-comment: false
+          hide-summary: false
+          coverage-summary-path: ./coverage/coverage-summary.json
+          junitxml-title: JUnit
+          junitxml-path: ./junit.xml
+          coverage-title: Jest Coverage Report
+          coverage-path: ./coverage.txt
+
+      - name: Extract Coverage Percentage
+        id: extract_coverage
+        run: |
+          if [ -f ./coverage.txt ]; then
+            coverage=$(grep -oP 'coverage:\s*\K[\d.]+' ./coverage.txt || echo "0")
+            date=$(date '+%Y-%m-%d')
+            # Export the variables as GitHub environment variables
+            echo "CURRENT_DATE=$date" >> $GITHUB_ENV
+            echo "CODE_COVERAGE=$coverage" >> $GITHUB_ENV
+            echo "Coverage extracted: $coverage"
+          else
+            echo "coverage.txt file not found. Setting coverage to 0."
+            echo "CURRENT_DATE=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
+            echo "CODE_COVERAGE=0" >> $GITHUB_ENV
+          fi
+
+      # Commented out the Update Google Sheet step
+      # - name: Update Google Sheet
+      #   id: update_sheet
+      #   uses: jroehl/gsheet.action@v2.0.0
+      #   with:
+      #     spreadsheetId: ${{ vars.GSHEET_ID }}
+      #     commands: |
+      #       [
+      #         { "command": "getWorksheet", "args": { "worksheetTitle": "APP_Code_Coverage", "spreadsheetId": "${{ vars.GSHEET_ID }}" }},
+      #         { "command": "appendRow", "args": { "worksheetTitle": "APP_Code_Coverage", "values": ["Date", "Coverage Percentage"] }},
+      #         { "command": "appendData", "args": { "data": [["${{env.CURRENT_DATE}}", "${{ env.CODE_COVERAGE }}"]], "worksheetTitle": "APP_Code_Coverage", "minCol": 1 }}
+      #       ]
+      #   env:
+      #     GSHEET_CLIENT_EMAIL: ${{ vars.GSHEET_CLIENT_EMAIL }}
+      #     GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
+
+      - name: Echo Coverage
+        run: |
+          echo "Today's date: ${{ env.CURRENT_DATE }}"
+          echo "Code coverage percentage: ${{ env.CODE_COVERAGE }}"
