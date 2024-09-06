@@ -1,7 +1,9 @@
 name: Code Coverage GSheet
 on:
   schedule:
-    - cron: "30 3 * * *"
+    - cron: "30 3 * * *" # Runs on a schedule
+  workflow_dispatch: 
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -53,22 +55,6 @@ jobs:
             echo "CURRENT_DATE=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
             echo "CODE_COVERAGE=0" >> $GITHUB_ENV
           fi
-
-      # Commented out the Update Google Sheet step
-      # - name: Update Google Sheet
-      #   id: update_sheet
-      #   uses: jroehl/gsheet.action@v2.0.0
-      #   with:
-      #     spreadsheetId: ${{ vars.GSHEET_ID }}
-      #     commands: |
-      #       [
-      #         { "command": "getWorksheet", "args": { "worksheetTitle": "APP_Code_Coverage", "spreadsheetId": "${{ vars.GSHEET_ID }}" }},
-      #         { "command": "appendRow", "args": { "worksheetTitle": "APP_Code_Coverage", "values": ["Date", "Coverage Percentage"] }},
-      #         { "command": "appendData", "args": { "data": [["${{env.CURRENT_DATE}}", "${{ env.CODE_COVERAGE }}"]], "worksheetTitle": "APP_Code_Coverage", "minCol": 1 }}
-      #       ]
-      #   env:
-      #     GSHEET_CLIENT_EMAIL: ${{ vars.GSHEET_CLIENT_EMAIL }}
-      #     GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
 
       - name: Echo Coverage
         run: |
