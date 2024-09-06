@@ -1,8 +1,10 @@
 name: Code Coverage GSheet
+
+# Schedule (cron) and manual trigger
 on:
   schedule:
-    - cron: "30 3 * * *" # Runs on a schedule
-  workflow_dispatch: 
+    - cron: "30 3 * * *"
+  workflow_dispatch:  # Allows the workflow to be triggered manually
 
 jobs:
   build:
@@ -15,14 +17,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          cache: 'yarn'
+          cache: 'npm'  # Switched from 'yarn' to 'npm'
 
+      # Install dependencies using npm instead of yarn
       - name: Install dependencies
-        run: yarn install
+        run: npm install
 
       - name: Run tests
         run: |
-          yarn add --dev jest-junit
+          npm install jest-junit --save-dev
           npx jest --coverage --reporters=default --reporters=jest-junit | tee ./coverage.txt
 
       - name: Jest Coverage Comment
@@ -56,7 +59,23 @@ jobs:
             echo "CODE_COVERAGE=0" >> $GITHUB_ENV
           fi
 
-      - name: Echo Coverage
+      # Commented out Google Sheet update logic
+      # - name: Update Google Sheet
+      #   id: update_sheet
+      #   uses: jroehl/gsheet.action@v2.0.0
+      #   with:
+      #     spreadsheetId: ${{ vars.GSHEET_ID }}
+      #     commands: |
+      #       [
+      #         { "command": "getWorksheet", "args": { "worksheetTitle": "APP_Code_Coverage", "spreadsheetId": "${{ vars.GSHEET_ID }}" }},
+      #         { "command": "appendRow", "args": { "worksheetTitle": "APP_Code_Coverage", "values": ["Date", "Coverage Percentage"] }},
+      #         { "command": "appendData", "args": { "data": [["${{env.CURRENT_DATE}}", "${{ env.CODE_COVERAGE }}"]], "worksheetTitle": "APP_Code_Coverage", "minCol": 1 }}
+      #       ]
+      #   env:
+      #     GSHEET_CLIENT_EMAIL: ${{ vars.GSHEET_CLIENT_EMAIL }}
+      #     GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
+
+      # Simple echo to replace Google Sheet update
+      - name: Dump Results
         run: |
-          echo "Today's date: ${{ env.CURRENT_DATE }}"
-          echo "Code coverage percentage: ${{ env.CODE_COVERAGE }}"
+          echo "Code Coverage for ${CURRENT_DATE}: ${CODE_COVERAGE}%"
