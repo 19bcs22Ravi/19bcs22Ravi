@@ -1,37 +1,90 @@
-Ravi Bhaskar Jha — DevOps / CloudOps Engineer
+<div align="center">
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="light.svg">
-    <img src="dark.svg" alt="Ravi Bhaskar Jha DevOps CloudOps profile banner" width="100%">
-  </picture>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./light.svg">
+  <img src="./dark.svg" alt="Ravi Bhaskar Jha — DevOps Engineer | CloudOps | SRE" width="100%">
+</picture>
 
-About Me
+<br>
 
-DevOps Engineer focused on AWS cloud infrastructure, Kubernetes, CI/CD, Infrastructure as Code, GitOps, observability, automation, and cloud security.
+> building reliable • scalable • secure cloud-native systems
 
-☁️ AWS: EC2, EKS, S3, VPC, IAM, Lambda, CloudWatch, DynamoDB, ECR
 
-⚙️ IaC: Terraform and remote state management
 
-🚀 CI/CD: Jenkins, GitHub Actions, ArgoCD, GitOps
 
-🐳 Containers: Docker, Kubernetes, Helm
 
-📊 Observability: Prometheus, Grafana, eBPF, Groundcover, ClickHouse
+</div>
 
-🐍 Automation: Python, Bash, Shell Scripting, Groovy
+~/about
 
-🔐 Security: IAM, least privilege, Security Groups, NACLs, Trivy, SonarQube
+ROLE        → DevOps Engineer
+FOCUS       → CloudOps • SRE • Infrastructure Automation
+CLOUD       → AWS
+ORCHESTRATION → Kubernetes / EKS
+AUTOMATION  → Python • Bash • Terraform
+DELIVERY    → Jenkins • GitHub Actions • ArgoCD • GitOps
+OBSERVABILITY → Prometheus • Grafana • eBPF • Groundcover • ClickHouse
+SECURITY    → IAM • Least Privilege • Security Groups • NACLs
+OS          → Linux
 
-🎓 AWS Certified Solutions Architect – Associate
+~/toolbox
 
-Connect
+<div align="center">
 
-GitHub: https://github.com/19bcs22Ravi
 
-LinkedIn: https://linkedin.com/in/raviraj0919
 
-Email: mailto.raviraj1999@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+~/highlights
+
+01  eBPF Observability
+    → Zero-instrumentation monitoring across 10+ Kubernetes clusters
+    → 1M+ metrics/minute with Groundcover + Prometheus
+
+02  Reliability Engineering
+    → Grafana dashboards + real-time alerting
+    → Reduced MTTR by 60%
+
+03  Cloud Automation
+    → Python automation for operational reporting
+    → 95% accurate failure predictions and $50K+ annual savings
+
+04  GitOps & Delivery
+    → ArgoCD-based continuous delivery across EKS clusters
+    → Automated synchronization and reduced manual deployment errors
+
+05  Cloud Security
+    → AWS security audits across EC2, S3, IAM and VPC
+    → IAM least-privilege hardening and network security remediation
+
+~/certification
+
+AWS Certified Solutions Architect – Associate
+
+~/projects
+
+End-to-End DevOps CI/CD Pipeline — GitHub → Jenkins → Maven → SonarQube/Trivy → Nexus → Docker → EKS
+
+End-to-End Go DevOps & GitOps Deployment — Jenkins → Docker → Trivy/SonarQube → ECR → Helm → ArgoCD → EKS
+
+<div align="center">
+
+> let's build something reliable.
+
+Ravi Bhaskar Jha
+GitHub · LinkedIn · Email
+
+</div>
