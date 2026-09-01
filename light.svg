@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" role="img" aria-label="Ravi Bhaskar Jha DevOps CloudOps GitHub profile banner">
+<defs>
+  <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#2563EB"><animate attributeName="offset" values="0;0.2;0" dur="8s" repeatCount="indefinite"/></stop>
+    <stop offset="50%" stop-color="#06B6D4"><animate attributeName="offset" values="0.5;0.7;0.5" dur="8s" repeatCount="indefinite"/></stop>
+    <stop offset="100%" stop-color="#10B981"/>
+  </linearGradient>
+  <radialGradient id="glow1"><stop offset="0%" stop-color="#2563EB" stop-opacity="0.12"/><stop offset="100%" stop-color="#2563EB" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glow2"><stop offset="0%" stop-color="#06B6D4" stop-opacity="0.1"/><stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/></radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="textglow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <clipPath id="clip"><rect x="8" y="8" width="1164" height="594" rx="28"/></clipPath>
+  <mask id="fade"><linearGradient id="fadeg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="black"/><stop offset=".15" stop-color="white"/><stop offset=".85" stop-color="white"/><stop offset="1" stop-color="black"/></linearGradient><rect width="1180" height="610" fill="url(#fadeg)"/></mask>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#E2E8F0" stroke-opacity=".18"/></pattern>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .ascii { font-size: 12px; fill: url(#accent); font-weight: 700; filter: url(#textglow); }
+    .label { font-size: 11px; fill: #475569; }
+    .value { font-size: 13px; fill: #0F172A; }
+    .pill { transition: transform .2s; }
+  </style>
+</defs>
+
+<g clip-path="url(#clip)">
+  <rect width="1180" height="610" fill="#FFFFFF"/>
+  <rect width="1180" height="610" fill="url(#grid)" opacity=".45"/>
+  <circle cx="160" cy="120" r="210" fill="url(#glow1)" filter="url(#blur)">
+    <animate attributeName="cx" values="160;250;160" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="500" r="240" fill="url(#glow2)" filter="url(#blur)">
+    <animate attributeName="cy" values="500;430;500" dur="14s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect x="18" y="18" width="1144" height="574" rx="24" fill="#F8FAFC" fill-opacity=".58" stroke="#E2E8F0"/>
+  <rect x="30" y="30" width="410" height="550" rx="20" fill="#FFFFFF" fill-opacity=".45" stroke="#E2E8F0"/>
+  <rect x="454" y="30" width="696" height="550" rx="20" fill="#F8FAFC" fill-opacity=".64" stroke="#E2E8F0"/>
+
+  <path d="M35 35H1145" stroke="url(#accent)" stroke-width="1.5" stroke-dasharray="90 1000">
+    <animate attributeName="stroke-dashoffset" values="0;-1090" dur="5s" repeatCount="indefinite"/>
+  </path>
+
+  <text x="50" y="60" fill="#06B6D4" font-size="12">&gt; initializing.dev.profile...</text>
+  <text x="50" y="88" fill="#475569" font-size="10">01</text>
+  <text x="42" y="112" class="ascii" opacity="0"><tspan>                 .::::::::::::.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.0s" fill="freeze"/></text>
+<text x="42" y="127" class="ascii" opacity="0"><tspan>             .:+ssssssssssssss+:.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.09s" fill="freeze"/></text>
+<text x="42" y="142" class="ascii" opacity="0"><tspan>           -+ssssssssssssssssssss+-</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.18s" fill="freeze"/></text>
+<text x="42" y="157" class="ascii" opacity="0"><tspan>         .osssssssssssssssssssssssso.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.27s" fill="freeze"/></text>
+<text x="42" y="172" class="ascii" opacity="0"><tspan>        :ssssssssssssssssssssssssssss:</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.36s" fill="freeze"/></text>
+<text x="42" y="187" class="ascii" opacity="0"><tspan>       +ssssssssssssssssssssssssssssss+</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.44999999999999996s" fill="freeze"/></text>
+<text x="42" y="202" class="ascii" opacity="0"><tspan>      /ssssssssssssssssssssssssssssssss/</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.54s" fill="freeze"/></text>
+<text x="42" y="217" class="ascii" opacity="0"><tspan>     :ssssssssssssssssssssssssssssssssss:</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.63s" fill="freeze"/></text>
+<text x="42" y="232" class="ascii" opacity="0"><tspan>     ossssssssssssssssssssssssssssssssssso</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.72s" fill="freeze"/></text>
+<text x="42" y="247" class="ascii" opacity="0"><tspan>     +sssssssssssssssssssssssssssssssssss+</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.8099999999999999s" fill="freeze"/></text>
+<text x="42" y="262" class="ascii" opacity="0"><tspan>     :ssssssssssssssssssssssssssssssssss:</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.8999999999999999s" fill="freeze"/></text>
+<text x="42" y="277" class="ascii" opacity="0"><tspan>      /ssssssssssssssssssssssssssssssss/</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="0.99s" fill="freeze"/></text>
+<text x="42" y="292" class="ascii" opacity="0"><tspan>       +ssssssssssssssssssssssssssssss+</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="1.08s" fill="freeze"/></text>
+<text x="42" y="307" class="ascii" opacity="0"><tspan>        :ssssssssssssssssssssssssssss:</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="1.17s" fill="freeze"/></text>
+<text x="42" y="322" class="ascii" opacity="0"><tspan>         .osssssssssssssssssssssssso.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="1.26s" fill="freeze"/></text>
+<text x="42" y="337" class="ascii" opacity="0"><tspan>           -+ssssssssssssssssssss+-</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="1.3499999999999999s" fill="freeze"/></text>
+<text x="42" y="352" class="ascii" opacity="0"><tspan>             .:+ssssssssssssss+:.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="1.44s" fill="freeze"/></text>
+<text x="42" y="367" class="ascii" opacity="0"><tspan>                 .::::::::::::.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.45s" begin="1.53s" fill="freeze"/></text>
+  <text x="50" y="550" fill="#06B6D4" font-size="12">&gt; portrait.exe <tspan fill="#10B981">█</tspan>
+    <animate attributeName="opacity" values="1;.2;1" dur="1s" repeatCount="indefinite"/>
+  </text>
+  <rect x="25" y="25" width="1140" height="5" fill="#06B6D4" opacity=".08">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,565;0,0" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="474" y="50" width="656" height="36" rx="10" fill="#FFFFFF" fill-opacity=".55" stroke="#E2E8F0"/>
+  <circle cx="494" cy="68" r="6" fill="#FF5F57"/><circle cx="514" cy="68" r="6" fill="#FEBC2E"/><circle cx="534" cy="68" r="6" fill="#28C840"/>
+  <text x="560" y="72" fill="#475569" font-size="11">terminal.dev</text>
+  <text x="1105" y="72" fill="#475569" font-size="10">v1.0.0</text>
+
+  <text x="500" y="130" fill="#0F172A" font-size="29" font-weight="800">Hi 👋, I'm <tspan fill="url(#accent)">Ravi Bhaskar Jha</tspan></text>
+  <text x="500" y="158" fill="#475569" font-size="14">&gt; DevOps Engineer | CloudOps | SRE | AWS | Kubernetes</text>
+  <rect x="840" y="147" width="8" height="15" fill="#06B6D4">
+    <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+  </rect>
+  <path d="M500 178H1105" stroke="#E2E8F0"/>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur=".6s" begin=".5s" fill="freeze"/>
+    <text x="500" y="210" class="label">LOCATION</text><text x="500" y="229" class="value">Noida, India</text>
+    <text x="720" y="210" class="label">EDUCATION</text><text x="720" y="229" class="value">B.E. Computer Science · 2019–2023</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur=".6s" begin="1s" fill="freeze"/>
+    <text x="500" y="262" class="label">CURRENT FOCUS</text><text x="500" y="281" fill="#475569" font-size="11">Cloud-native reliability &amp; automation</text>
+    <text x="800" y="262" class="label">CERTIFICATION</text><text x="800" y="281" fill="#0F172A" font-size="11">AWS Certified Solutions Architect – Associate</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur=".6s" begin="1.5s" fill="freeze"/>
+    <text x="500" y="314" class="label">EMAIL</text><text x="500" y="333" class="value">jha.raviraj1999@gmail.com</text>
+    <text x="720" y="314" class="label">GITHUB</text><text x="720" y="333" class="value">github.com/19bcs22Ravi</text>
+  </g>
+
+  <rect x="676" y="352" width="442" height="192" rx="16" fill="#FFFFFF" fill-opacity=".35" stroke="#E2E8F0"/>
+  <text x="696" y="377" fill="#0F172A" font-size="14" font-weight="700">Skills</text>
+  
+        <g class="pill" transform="translate(690,390)">
+          <rect width="62" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="31.0" y="18" text-anchor="middle" fill="#0F172A" font-size="11">AWS</text>
+        </g>
+        <g class="pill" transform="translate(802,390)">
+          <rect width="95" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="47.5" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Kubernetes</text>
+        </g>
+        <g class="pill" transform="translate(914,390)">
+          <rect width="84" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="42.0" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Terraform</text>
+        </g>
+        <g class="pill" transform="translate(1026,390)">
+          <rect width="76" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="38.0" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Docker</text>
+        </g>
+        <g class="pill" transform="translate(690,429)">
+          <rect width="82" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="41.0" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Jenkins</text>
+        </g>
+        <g class="pill" transform="translate(802,429)">
+          <rect width="113" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="56.5" y="18" text-anchor="middle" fill="#0F172A" font-size="11">GitHub Actions</text>
+        </g>
+        <g class="pill" transform="translate(914,429)">
+          <rect width="78" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="39.0" y="18" text-anchor="middle" fill="#0F172A" font-size="11">ArgoCD</text>
+        </g>
+        <g class="pill" transform="translate(1026,429)">
+          <rect width="63" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="31.5" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Helm</text>
+        </g>
+        <g class="pill" transform="translate(690,468)">
+          <rect width="72" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="36.0" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Python</text>
+        </g>
+        <g class="pill" transform="translate(802,468)">
+          <rect width="65" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="32.5" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Bash</text>
+        </g>
+        <g class="pill" transform="translate(914,468)">
+          <rect width="62" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="31.0" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Linux</text>
+        </g>
+        <g class="pill" transform="translate(1026,468)">
+          <rect width="103" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="51.5" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Prometheus</text>
+        </g>
+        <g class="pill" transform="translate(690,507)">
+          <rect width="82" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="41.0" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Grafana</text>
+        </g>
+        <g class="pill" transform="translate(802,507)">
+          <rect width="61" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="30.5" y="18" text-anchor="middle" fill="#0F172A" font-size="11">eBPF</text>
+        </g>
+        <g class="pill" transform="translate(914,507)">
+          <rect width="89" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="44.5" y="18" text-anchor="middle" fill="#0F172A" font-size="11">ClickHouse</text>
+        </g>
+        <g class="pill" transform="translate(1026,507)">
+          <rect width="57" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+          <text x="28.5" y="18" text-anchor="middle" fill="#0F172A" font-size="11">Git</text>
+        </g>
+
+  <g transform="translate(970,560)"><circle r="15" fill="#F8FAFC" stroke="#06B6D4"/><text y="5" text-anchor="middle" fill="#0F172A" font-size="11" font-weight="700">GH</text></g><g transform="translate(1010,560)"><circle r="15" fill="#F8FAFC" stroke="#06B6D4"/><text y="5" text-anchor="middle" fill="#0F172A" font-size="11" font-weight="700">in</text></g><g transform="translate(1050,560)"><circle r="15" fill="#F8FAFC" stroke="#06B6D4"/><text y="5" text-anchor="middle" fill="#0F172A" font-size="11" font-weight="700">X</text></g><g transform="translate(1090,560)"><circle r="15" fill="#F8FAFC" stroke="#06B6D4"/><text y="5" text-anchor="middle" fill="#0F172A" font-size="11" font-weight="700">↗</text></g>
+  <text x="500" y="564" fill="#475569" font-size="11">AWS • EKS • Terraform • CI/CD • GitOps • Observability</text>
+
+  <g opacity=".45">
+    <circle cx="80" cy="130" r="2" fill="#06B6D4"><animate attributeName="cy" values="130;110;130" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="410" cy="480" r="2" fill="#10B981"><animate attributeName="cx" values="410;390;410" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="1140" cy="150" r="2" fill="#06B6D4"><animate attributeName="cy" values="150;170;150" dur="3.5s" repeatCount="indefinite"/></circle>
+  </g>
+</g>
+</svg>
